@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLNx Dashboard Redesign | Process</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-container">
+    <a href="index.html" class="site-logo">Cheng-Yen (Justin) Chang</a>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Work</a></li>
+        <li><a href="community-corner-process.html">Community Corner</a></li>
+        <li><a href="bear-arms-process.html">Bear Arms</a></li>
+        <li><a href="clnx-process.html" class="active">CLNx</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <p class="eyebrow">Process</p>
+      <h1>CLNx Dashboard Redesign</h1>
+      <p class="section-intro">
+        Improving schedule visibility, navigation clarity, and implementation readiness for a student career dashboard.
+      </p>
+    </div>
+  </section>
+
+  <!-- Overview + Role -->
+  <section class="content-section">
+    <div class="container process-intro-grid">
+      <article class="detail-card">
+        <h2>Overview</h2>
+        <p>
+          CLNx is a University of Toronto career and co-curricular platform where students book appointments, register for events and workshops, and access career resources. Although the platform offers many useful services, its dashboard made common tasks difficult by mixing personal schedules, public events, repeated navigation, and unrelated content in the same space.
+        </p>
+        <p>
+          This redesign focused on one core student need: quickly checking upcoming appointments, events, and workshops after logging in.
+        </p>
+      </article>
+
+      <article class="detail-card">
+        <h2>My Role</h2>
+        <p>
+          <strong>UX Designer — User Journey Mapping & Developer Handoff</strong>
+        </p>
+        <p>
+          I led the user journey mapping for the core scheduling tasks and created developer handoff annotations for layout, responsiveness, and semantic HTML. I also participated in the heuristic audit and contributed to selected wireframes, including the My Bookings flow and Resume Critique overlay.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Hero Image / Project Visual -->
+  <section class="content-section alt-section">
+    <div class="container">
+      <div class="process-image">
+        <img src="images/clnx-intro.png" alt="Introducing what CLNx is">
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section class="content-section">
+    <div class="container process-section-grid">
+      <div>
+        <p class="eyebrow">Problem</p>
+        <h2 class="section-title">The dashboard made simple scheduling tasks feel difficult.</h2>
+      </div>
+
+      <div class="detail-card">
+        <p>
+          Students were not struggling because CLNx lacked useful features. They struggled because the dashboard made those features difficult to recognize and access.
+        </p>
+        <p>
+          The original layout mixed personal schedules, public events, repeated navigation, and unrelated announcements. As a result, students had to scan, scroll, and guess where to find their own appointments or events.
+        </p>
+        <div class="process-image">
+          <img src="images/clnx-current-dashboard.png" alt="Original CLNx dashboard showing repeated navigation, public events, and cluttered content">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Heuristic Audit -->
+  <section class="content-section alt-section">
+    <div class="container process-section-grid">
+      <div>
+        <p class="eyebrow">Research</p>
+        <h2 class="section-title">Heuristic Audit</h2>
+      </div>
+
+      <div class="detail-card">
+        <p>
+          Through heuristic evaluation, we identified three major usability issues affecting the student scheduling flow.
+        </p>
+
+        <div class="insight-grid">
+          <article class="detail-card">
+            <h3>Cluttered hierarchy</h3>
+            <p>
+              Multiple navigation systems, large visuals, and competing content made it difficult to identify the primary task.
+            </p>
+          </article>
+
+          <article class="detail-card">
+            <h3>Confusing labels</h3>
+            <p>
+              Labels such as My Schedule, My Calendar, Appointments, Events, and Upcoming Events overlapped in meaning.
+            </p>
+          </article>
+
+          <article class="detail-card">
+            <h3>Broken content</h3>
+            <p>
+              Some links led to broken or outdated pages, reducing trust and interrupting task completion.
+            </p>
+          </article>
+        </div>
+
+      <div class="process-image">
+        <img src="images/clnx-heuristic-audit.png" alt="Heuristic audit findings showing cluttered navigation, confusing labels, and broken content">
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- User Journey -->
+  <section class="content-section">
+    <div class="container process-section-grid">
+      <div>
+        <p class="eyebrow">User Journey</p>
+        <h2 class="section-title">Mapping the Sad Path</h2>
+      </div>
+
+      <div class="detail-card">
+        <p>
+          I mapped two high-frequency student tasks: checking upcoming appointments and trying to change an appointment from in-person to virtual. These journeys helped reveal where students experienced hesitation, confusion, and unmet expectations.
+        </p>
+        <p>
+          The most important insight was that the schedule was not necessarily missing. It was difficult to discover, difficult to interpret, and separated across confusing sections.
+        </p>
+
+        <div class="process-image multi-image">
+          <img src="images/clnx-user-journey-task1.png" alt="User journey map for checking upcoming appointments in CLNx">
+          <img src="images/clnx-user-journey-task2.png" alt="User journey map for changing an appointment from in-person to virtual">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Insights -->
+<section class="content-section">
+  <div class="container">
+    <p class="eyebrow">Key Insights</p>
+    <h2 class="section-title">What the Journey Revealed</h2>
+
+    <div class="insight-grid">
+      <article class="detail-card">
+        <h3>The schedule existed, but was easy to miss</h3>
+        <p>Users expected one central place for their bookings, but schedule information was split across multiple areas.</p>
+      </article>
+
+      <article class="detail-card">
+        <h3>Similar labels created hesitation</h3>
+        <p>My Schedule, My Calendar, Appointments, and Events sounded related but behaved differently.</p>
+      </article>
+
+      <article class="detail-card">
+        <h3>Students expected more control</h3>
+        <p>Users expected to manage appointment details inside CLNx, such as changing attendance format, but the flow did not clearly support this.</p>
+      </article>
+
+      <article class="detail-card">
+        <h3>Scrolling replaced structure</h3>
+        <p>Important information was pushed below unrelated content, making a simple check feel unnecessarily slow.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+  <!-- Design Goals -->
+  <section class="content-section">
+    <div class="container process-section-grid">
+      <div>
+        <p class="eyebrow">Design Direction</p>
+        <h2 class="section-title">Turning Findings into Goals</h2>
+      </div>
+
+      <div class="detail-card">
+        <p>
+          Based on the audit and journey maps, the redesign focused on making the dashboard more task-oriented while keeping the original platform purpose intact.
+        </p>
+
+        <div class="insight-grid">
+          <article class="detail-card">
+            <h3>Clarify hierarchy</h3>
+            <p>
+              Make the student’s personal schedule visible earlier and easier to scan.
+            </p>
+          </article>
+
+          <article class="detail-card">
+            <h3>Separate personal and public content</h3>
+            <p>
+              Distinguish booked appointments and events from general opportunities or recommendations.
+            </p>
+          </article>
+
+          <article class="detail-card">
+            <h3>Reduce navigation ambiguity</h3>
+            <p>
+              Simplify how users move between dashboard content, bookings, and account-related actions.
+            </p>
+          </article>
+        </div>
+
+        <div class="process-image">
+          <img src="images/clnx-design-goals.png" alt="Design goals for organizing dashboard content and reducing clutter">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wireframes -->
+  <section class="content-section alt-section">
+    <div class="container process-section-grid">
+      <div>
+        <p class="eyebrow">Wireframes</p>
+        <h2 class="section-title">Rebuilding the Dashboard Flow</h2>
+      </div>
+
+      <div class="detail-card">
+        <p>
+          The mid-fidelity wireframes reorganized CLNx around the student’s core scheduling needs. Instead of hiding personal bookings below unrelated content, the redesigned dashboard surfaces schedule information, personalized events, and relevant career actions earlier in the experience.
+        </p>
+        <p>
+          I supported the wireframing process and contributed selected screens, with a focus on My Bookings and appointment-related interaction states.
+        </p>
+
+        <div class="process-image">
+          <img src="images/clnx-wireframe-overview.png" alt="Overview of CLNx mid-fidelity wireframes showing dashboard, bookings, events, and overlay flows">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interaction Flow -->
+  <section class="content-section">
+    <div class="container process-section-grid">
+      <div>
+        <p class="eyebrow">Interaction Flow</p>
+        <h2 class="section-title">Supporting Bookings and Appointment Actions</h2>
+      </div>
+
+      <div class="detail-card">
+        <p>
+          Because the journey map showed that students needed more than visibility, we extended the redesign into booking-related states. The My Bookings and Resume Critique overlay screens explored how students could review appointments, understand event details, and act on relevant opportunities.
+        </p>
+
+        <div class="process-image multi-image">
+          <img src="images/clnx-my-bookings.png" alt="My Bookings wireframe showing student appointments and events">
+          <img src="images/clnx-resume-critique-overlay.png" alt="Resume Critique overlay wireframe showing appointment-related interaction state">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Developer Handoff -->
+  <section class="content-section alt-section">
+    <div class="container process-section-grid">
+      <div>
+        <p class="eyebrow">Developer Handoff</p>
+        <h2 class="section-title">Making the Design Code-Ready</h2>
+      </div>
+
+      <div class="detail-card">
+        <p>
+          I created developer handoff annotations to explain how the redesigned layout could be implemented using HTML and CSS. These annotations focused on responsive layout behavior, semantic structure, and component-level CSS strategy.
+        </p>
+
+        <div class="insight-grid">
+          <article class="detail-card">
+            <h3>Layout strategy</h3>
+            <p>
+              CSS Grid and Flexbox annotations clarified how dashboard columns, cards, and navigation should be structured.
+            </p>
+          </article>
+
+          <article class="detail-card">
+            <h3>Responsive behavior</h3>
+            <p>
+              Breakpoint notes explained how multi-column layouts collapse into single-column mobile views.
+            </p>
+          </article>
+
+          <article class="detail-card">
+            <h3>Semantic HTML</h3>
+            <p>
+              Handoff notes identified where elements should use header, nav, section, article, aside, and figure.
+            </p>
+          </article>
+        </div>
+
+        <div class="process-image">
+          <img src="images/clnx-dev-handoff.png" alt="Developer handoff annotations showing CSS layout strategy and responsive behavior for CLNx wireframes">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reflection -->
+  <section class="content-section">
+    <div class="container process-intro-grid">
+      <article class="detail-card">
+        <h2>Reflection</h2>
+        <p>
+          This project helped me understand how usability problems often come from structure, wording, and discoverability rather than visual design alone. A page can contain the right features but still fail if users cannot recognize where to go or what each section means.
+        </p>
+      </article>
+
+      <article class="detail-card">
+        <h2>What I Would Improve Next</h2>
+        <p>
+          If given more time, I would validate the redesigned flow through usability testing with students and compare whether the new dashboard reduces hesitation when finding upcoming bookings. I would also refine the appointment management flow to better support actions students expect, such as changing attendance format.
+        </p>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Cheng-Yen (Justin) Chang. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
